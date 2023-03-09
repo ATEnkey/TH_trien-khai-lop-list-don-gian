@@ -21,6 +21,10 @@ class ArrayList
             die("ERROR in ArrayList.get");
         }
     }
+    public function size()
+    {
+        return count($this->arrayList);
+    }
     public function isInteger($toCheck)
     {
         return preg_match("/^[0-9]+$/", $toCheck);
